@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyProfileActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="509dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        android:layout_marginRight="8dp">
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_margin="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+
+            android:contentDescription="avatar"
+            app:srcCompat="@drawable/avatar"
+            tools:srcCompat="@drawable/avatar" />
+
+        <TextView
+            android:id="@+id/tv_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textColor="#737373"
+            android:textSize="24sp"
+            android:typeface="serif"
+            app:layout_constraintTop_toBottomOf="@+id/img_avatar" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9C9A9A" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="315dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:text="@string/track"
+                android:textColor="#737373"
+                android:textSize="18sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/tv_track"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android"
+                android:textColor="#737373"
+                android:textSize="18sp"
+                android:typeface="serif"
+                app:fontFamily="serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:text="@string/country"
+                android:textColor="#737373"
+                android:textSize="18sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/tv_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zimbabwe"
+                android:textColor="#737373"
+                android:textSize="18sp"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:text="@string/email"
+                android:textColor="#737373"
+                android:textSize="18sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nigelchomba90@gmail.com"
+                android:textColor="#737373"
+                android:textSize="18sp"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:text="@string/phone_number"
+                android:textColor="#737373"
+                android:textSize="18sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+27 840 928225"
+                android:textColorLink="#737373"
+                android:textSize="18sp"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:text="@string/slack_user_name"
+                android:textColor="#737373"
+                android:textSize="18sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/tv_slack_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/slack_username"
+                android:textColor="#737373"
+                android:textSize="18sp"
+                android:typeface="serif" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
